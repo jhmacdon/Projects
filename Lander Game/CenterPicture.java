@@ -1,8 +1,10 @@
 /******************************************
 *                                         
-* Official Name: Josiah MacDonald                           
+* Official Name: Josiah MacDonald
+* 
+* Website: josiahmacdonald.com
 *                                         
-* E-mail:  jhmacdon@syr.edu               
+* E-mail:  me@josiahmacdonald.com               
 *                                         
 * Final Project:  Lunar Lander              
 *                                         
