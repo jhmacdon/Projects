@@ -1,0 +1,17 @@
+John Gizdich – uploaded animation tutorial on youtube 
+	http://www.youtube.com/watch?v=I3usNR8JrEE
+
+Scribblenauts – the png for the lander is part of the scribblenauts game
+	http://static2.wikia.nocookie.net/__cb20130223161046/scribblenauts/images/9/9f/Lunar_Lander.png
+
+Utilized Dr. Baruch’s method for repainting panels so that one panel could control     
+	elements in an entirely different panel
+
+Nick Walker gave me the idea for the parallax effect with the stars.
+
+Stackoverflow had some good answers as to how to remove jpanels from jpanels (method used in CenterPicture class) 
+	http://stackoverflow.com/questions/2501861/how-can-i-remove-a-jpanel-from-a-jframe
+
+I used Dr. Baruch’s Circle.java and SplatPanel.java as a model for the 
+	Star.java and StarPanel.java (though both classes have been expanded upon 
+	to do things like the parallax effect and the image “lander.png” incorporation. 

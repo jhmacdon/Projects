@@ -1,0 +1,14 @@
+Designed and developed by Josiah MacDonald
+
+
+Official Name:  Josiah MacDonald
+           
+Website:  josiahmacdonald.com
+
+Email: me@josiahmacdonald.com               
+                                         
+Final Project:  LM Simulator              
+                                         
+Compiler:  drJava on a mac               
+                                         
+Date:  Dec. 2, 2013           

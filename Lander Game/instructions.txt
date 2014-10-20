@@ -1,0 +1,17 @@
+<font size="16">Welcome to LM Simulator!</font><br><br>
+Your goal is to land the simulator at a downward velocity of 5 m/s or less, 
+while not running out of fuel (this will appear as -5 m/s). 
+
+Click start to begin the game. Adjust the thrusters accordingly as you attempt to
+land the lander.
+
+The three difficulties are 'Easy', 'Medium', and 'Hard'. The difficulties
+vary the amount of fuel you begin with. 
+
+Fuel is only used when your thrusters are on. Freefalling will not
+subtract from your fuel stores.
+
+If you run out of fuel, your lander will freefall to the Lunar surface. If
+you were close enough to the surface and traveling slow enough, it is
+possible that the lander will land with a safe velocity.
+
