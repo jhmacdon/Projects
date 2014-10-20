@@ -1,8 +1,10 @@
 /******************************************
 *                                         
-* Official Name: Josiah MacDonald                           
+* Official Name: Josiah MacDonald
+* 
+* Website: josiahmacdonald.com
 *                                         
-* E-mail:  jhmacdon@syr.edu               
+* E-mail:  me@josiahmacdonald.com               
 *                                         
 * Final Project:  Lunar Lander              
 *                                         
@@ -10,9 +12,9 @@
 *                                         
 * Date:  Dec. 2, 2013       
 * 
-* GamePanel.java
+* CenterPicture.java
 *                                         
-*******************************************/
+*******************************************
 
 import java.awt.*;
 import javax.swing.*;
