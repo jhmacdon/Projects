@@ -31,7 +31,7 @@ public class StarPanel extends JPanel
   private int starNumber = 600; //number of stars
   private Star[] stars = new Star[starNumber];
   static MathDriver calculator = new MathDriver();
-  static BufferedImage image, background;
+  static BufferedImage image, moon;
 
   
   public StarPanel()
@@ -50,7 +50,7 @@ public class StarPanel extends JPanel
     try //to avoid throw IO
     {                
       image = ImageIO.read(new File("lander.png")); //lander png
-      background = ImageIO.read(new File("bg.png"));//moon image
+      moon = ImageIO.read(new File("bg.png"));//moon image
     } 
     catch (IOException ex) //throws IO
     {System.out.println(ex);}
@@ -66,7 +66,7 @@ public class StarPanel extends JPanel
     super.paintComponent(g);
     for(int i=0;i<starNumber;i++) //draws all the stars
       stars[i].draw(g); //draws star
-    g.drawImage(background, 0, 0, null); //draws the moon
+    g.drawImage(moon, 0, (int)((-MathDriver.getVelocity()+30)*0.5), null); //draws the moon
     g.drawImage(image, (getWidth()/2)-20, (int)calculator.position(), null); //draws the lander
     
     

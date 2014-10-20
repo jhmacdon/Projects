@@ -35,7 +35,7 @@ public class Star
     
     if(diameter>2)
     {
-      page.fillOval(x,(int)(yNew-=(parallax*parallax*(MathDriver.getVelocity()/100))/20),diameter,diameter); //draws star, 
+      page.fillOval(x,(int)(yNew-=(parallax*(MathDriver.getVelocity()/100))/20),diameter,diameter); //draws star, 
     }                                                                                                        //moves more w/ more size
   }
   
