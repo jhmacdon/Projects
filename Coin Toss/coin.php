@@ -23,7 +23,7 @@ set_time_limit (12000000);
 $coin = false;
 $heads = 0;
 $tails = 0;
-$num = 10000000000000;
+$num = 1000000;
 
 if($num>10000000){
 	$times = $num%100000000;
