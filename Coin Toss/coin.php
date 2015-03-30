@@ -57,7 +57,7 @@ if(!isset($times)){
 echo $heads . " total heads, ". $tails . " total tails";
 ?>
 <br>
-<input type="submit" onClick="(window.location='./coin.php')" value="Flip <?php echo $num; ?> coins!">
+<input type="submit" onClick="(window.location='./coin.php')" value="Flip <?=$num ?> coins!">
 <br>
 <?php }else if($times == 0){
 echo $heads . " total heads, ". $tails . " total tails";
