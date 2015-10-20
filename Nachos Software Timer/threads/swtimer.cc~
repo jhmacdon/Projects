@@ -1,0 +1,70 @@
+// NOTE: pseudocode provided is just an option, feel free to implement in different ways
+
+#include "swtimer.h"
+#include "system.h"
+#include "scheduler.h"
+//void
+//SWTimer(){
+//  List *sleepList = new List();
+//*}
+List *sleepList;
+int done = 0;
+
+SWTimer::SWTimer(){
+  sleepList = new List();
+}
+int
+SWTimer::GoToSleepFor(int howLong) {
+  if(howLong % 2 == 0){
+    IntStatus oldLevel = interrupt->SetLevel(IntOff);
+    sleepList->SortedInsert(currentThread, stats->totalTicks + howLong*50);
+    currentThread->Sleep();
+    (void) interrupt->SetLevel(oldLevel);
+  } else {
+    return -1;
+  }
+  // ...
+  //
+  // ticks = howLong in number of ticks
+  // wakeup_time = stats->totalTicks + ticks
+  //
+  // ...
+  return 0;
+}
+
+
+void
+SWTimer::WakeUp() {
+  done = 0;
+  while(done == 0){
+    //printf("p");
+    int when;
+    if(!sleepList->IsEmpty()){
+      Thread *wake = (Thread *)sleepList->SortedRemove(&when);
+      if(wake != NULL){
+	if(when <= stats->totalTicks){
+	  IntStatus oldLevel = interrupt->SetLevel(IntOff);
+	  scheduler->ReadyToRun(wake);
+	  (void) interrupt->SetLevel(oldLevel);
+	}
+	else{
+	  sleepList->SortedInsert(wake, when);
+	  done = 1;
+	}
+	if(sleepList->IsEmpty()){
+	  done = 1;
+	}
+      } else {
+	//printf("stuck in NULL");
+	done = 1;
+      }
+    } else {
+      //printf("stuck in !sleeplist");
+      done = 1;
+    }
+  }
+  // for each sleeping thread in sleepList:
+  //   if (stats->totalTicks == wakeup_time):
+  //     wake thread up
+}
+
