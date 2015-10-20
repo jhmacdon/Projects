@@ -1,0 +1,19 @@
+Printing graph:
+0->4	0->5	0->11	
+1->2	1->4	1->8	
+2->5	2->6	2->9	
+3->2	3->6	3->13	
+4->7	
+5->8	5->12	
+6->5	
+No edges from 7
+8->7	
+9->10	9->11	
+10->13	
+No edges from 11
+12->9	
+No edges from 13
+topological sort: [3, 1, 2, 6, 0, 5, 12, 9, 11, 10, 13, 8, 4, 7]
+graph is acyclic: true
+making cyclic...
+graph is acyclic: false
