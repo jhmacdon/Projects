@@ -1,0 +1,20 @@
+<template name="header">
+    <div class="center aligned {{isActive}} header-wrapper">
+        <h1 class="huge center aligned main ui header" style="text-shadow: 4px 2px 14px #000000;">
+            {{constant 'name'}}
+            <div class="sub header">
+                by Ocean's 3
+            </div>
+        </h1>
+
+
+        {{#if showLogin}}
+        <div class="ui fluid log-in-as-guest button" style="width:40%;margin:auto">
+            <i class="sign out icon"></i>
+            Log in as Guest
+        </div>
+        {{else}}
+        <button class="basic ui resize icon button" style="color:white!important">Sign In <i class="{{iconClass}} icon"></i></button>
+        {{/if}}
+    </div>
+</template>

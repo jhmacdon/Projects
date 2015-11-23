@@ -1,0 +1,27 @@
+.present{
+  text-align: center;
+}
+
+.present div{
+  max-width:100%;
+}
+
+.present div img{
+  max-height: 90vh;
+  max-width: 100%;
+
+}
+
+
+.present div button{
+    margin: 250px 50px;
+    margin: 30vh 50px;
+    font-size: 2em;
+    font-family: sans-serif;
+    color: white;
+    background-color: #082869;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

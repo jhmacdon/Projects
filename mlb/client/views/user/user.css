@@ -1,0 +1,42 @@
+.item-container{
+    margin-right: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    text-align: center;
+    display: inline-block;
+}
+
+.item-container i, .item-container span{
+  color:white;
+  font-size:4em;
+  line-height: 100px;
+  margin:0!important;
+}
+
+.item-container span{
+  font-size: 3em;
+}
+
+.not{
+  background-color: gray;
+}
+
+.done{
+  background-color: #446AB5;
+}
+
+.trophybg{
+  background-color: #7BB505;
+}
+
+.item .content{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.item .content .title{
+  font-size: 18px;
+  font-weight: bold;
+}

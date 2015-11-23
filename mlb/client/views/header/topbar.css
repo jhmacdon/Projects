@@ -1,0 +1,31 @@
+.top-bar{
+  background-color: #041536;
+  height:50px;
+  text-align: center;
+}
+
+.top-bar .back-container{
+  float:left;
+  width:50px;
+  height:50px;
+}
+
+.top-bar .log-out-container{
+  float:right;
+  width:50px;
+  height:50px;
+}
+
+.top-bar div .button{
+  height:100%;
+  margin: 0!important;
+  padding: 0!important;
+  background-color: #314C82;
+  color:white;
+}
+
+.top-bar div .button i{
+  margin:0!important;
+  padding:0!important;
+  line-height: 50px;
+}

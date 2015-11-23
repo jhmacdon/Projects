@@ -1,0 +1,84 @@
+<template name="home">
+    <div class="ui three column main-content features grid">
+        {{#each feature}}
+            <div class="center aligned column">
+                <div class="ui unstyled no-hover-styles no-underline link icon header">
+                    <span class="headline">{{text}}</span>
+                    <i class="{{color}} {{icon}} boilerplate-feature icon"></i>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+
+    <div id="packages" class="main-content padding-wrapper">
+        <div class="ui fitted horizontal icon divider"><i class="circle icon"></i></div>
+        <div class="ui two column stackable grid">
+            <div class="middle aligned row">
+                <div class="center aligned column">
+                    <div class="center aligned icon-wrapper">
+                        <i class="circular massive black ticket icon"></i>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3 class="large ui header">Build your Fan Identity! <div class="sub header">Support your team by wearing the MLBand wherever you go</div></h3>
+                    <div class="ui list">
+                        {{#each package}}
+                            <div class="item no-underline link">
+                                <i class="archive icon"></i>
+                                {{name}}
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="console-tool" class="main-content padding-wrapper">
+        <div class="ui fitted horizontal icon divider"><i class="circle icon"></i></div>
+        <div class="ui two column child grid">
+            <div class="middle aligned row">
+                <div class="column">
+                    <h3 class="large ui header">Enhance the MLB experience! <div class="sub header">You don't even need a ticket</div></h3>
+                    <div class="ui list">
+                        {{#each package2}}
+                            <div class="item no-underline link">
+                                <i class="archive icon"></i>
+                                {{name}}
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="center aligned column">
+                    <div class="center aligned icon-wrapper">
+                        <i class="circular massive black compass icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="html5" class="main-content padding-wrapper">
+        <div class="ui fitted horizontal icon divider"><i class="circle icon"></i></div>
+        <div class="ui two column stackable grid">
+            <div class="middle aligned row">
+                <div class="center aligned column">
+                    <div class="center aligned icon-wrapper">
+                        <i class="circular massive black group icon"></i>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3 class="large ui header">Baseball made social! <div class="sub header">Join the MLB community</div></h3>
+                    <div class="ui list">
+                        {{#each package3}}
+                            <div class="item no-underline link">
+                                <i class="archive icon"></i>
+                                {{name}}
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

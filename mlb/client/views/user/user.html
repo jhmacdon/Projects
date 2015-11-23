@@ -1,0 +1,63 @@
+<template name="user">
+  {{#each items}}
+  <hr>
+  <div class="item">
+    <div class="item-container {{status}}">
+      {{#if icon}}
+      <i class="{{icon}} icon"></i> {{else}}
+      <span>{{icontext}}</span>
+      {{/if}}
+    </div>
+    <div class="content">
+      <span class="title">{{title}}</span>
+      <br>
+      <span class="subtitle">{{text}}</span>
+    </div>
+  </div>
+  {{/each}}
+  <hr>
+</template>
+
+
+<template name="seat">
+  Welcome to your seat page
+</template>
+
+<template name="money">
+  <div class="money">
+    <table>
+      <tr>
+        <td>
+          Ticket Budget: ${{tic}}
+        </td>
+        <td>
+          Add Money: $
+          <input type="text" id="ticmon">
+          <button id="ticclick">Add</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Concession Budget: ${{con}}
+        </td>
+        <td>
+          Add Money: $
+          <input type="text" id="conmon">
+          <button id="conclick">Add</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</template>
+
+<template name="deals">
+  Check out the latest MLBand exclusive deals
+</template>
+
+<template name="help">
+  Contact us for help
+</template>
+
+<template name="account">
+  Manage your account here
+</template>

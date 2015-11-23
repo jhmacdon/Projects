@@ -1,0 +1,21 @@
+<template name="basicLayout">
+  {{#if pre}}
+  {{> present}}
+  {{else}}
+  <div id="main">
+    <header>
+      {{#if in}}
+      {{> topbar}}
+      {{else}}
+      {{> header}}
+      {{/if}}
+    </header>
+
+    {{> yield}} {{! Also a sidebar! }}
+    <footer>
+      {{> footer}}
+    </footer>
+
+  </div>
+  {{/if}}
+</template>
