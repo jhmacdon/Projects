@@ -1,4 +1,4 @@
-# meteor-boilerplate
+# MLBand
 
 MLB project app submission
 
