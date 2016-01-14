@@ -1,0 +1,20 @@
+class Piece{
+  public boolean king;
+  public boolean taken;
+  public int x;
+  public int y;
+  public String color;
+
+  public Piece(int x_coord, int y_coord, String c){
+    x = x_coord;
+    y = y_coord;
+    color = c;
+    king = false;
+    taken = false;
+  }
+
+  public char GetColorCode(){
+    return color.charAt(0);
+  }
+
+}

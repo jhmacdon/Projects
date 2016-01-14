@@ -1,0 +1,24 @@
+import java.util.*;
+
+class Checkers{
+  boolean finished;
+  public Checkers(){
+    Scanner s = new Scanner(System.in);
+    finished = false;
+    System.out.println("Would you like to move first? (y/n)");
+    char ans = s.next().charAt(0);
+    System.out.println(ans);
+    Board board = new Board();
+    Menu();
+  }
+
+  public void Menu(){
+
+
+
+
+    while(!finished){
+
+    }
+  }
+}

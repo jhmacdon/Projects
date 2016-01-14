@@ -1,0 +1,48 @@
+class Board{
+  Piece[] pieces;
+  public Board(){
+    SetBoard();
+    PrintBoard();
+  }
+
+  public void SetBoard(){
+    pieces = new Piece[24];
+    //set white
+    int count = 0;
+    for(int i = 0; i < 3; i++){
+      for(int j = 0; j < 8; j++){
+        if(Check(i, j)){
+          pieces[count++] = new Piece(i, j, "White");
+          System.out.println(count);
+        }
+      }
+    }
+    for(int i = 5; i < 8; i++){
+      for(int j = 0; j < 8; j++){
+        if(Check(i, j)) pieces[count++] = new Piece(i, j, "Black");
+      }
+    }
+  }
+
+  public boolean Check(int x, int y){
+    return (x % 2) != (y % 2);
+  }
+
+  public Piece FindPiece(int x, int y){
+    for(int i = 0; i < 24; i++){
+      if(pieces[i].x == x && pieces[i].y == y) return pieces[i];
+    }
+    return null;
+  }
+
+  public void PrintBoard(){
+    for(int i = 0; i < 8; i++){
+      for(int j = 0; j < 8; j++){
+        Piece piece = FindPiece(i, j);
+        if(piece != null) System.out.print(piece.GetColorCode() + "\t");
+        else System.out.print(".\t");
+      }
+      System.out.println();
+    }
+  }
+}
